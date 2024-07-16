@@ -30,8 +30,8 @@ function myMap(collection, callback) {
 function myReduce(collection, callback, acc) {
     let startIdx = 0;
 
-    if (!acc) {
-        acc = collection[0];
+    if (acc === undefined) {
+        acc = Array.isArray(collection) ? collection[0] : collection[Object.keys(collection)[0]];
         startIdx = 1;
     }
 
@@ -94,10 +94,26 @@ function mySize(collection) {
     }
 }
 
+function myFirst(array, n) {
+    if (n) {
+        return array.slice(0, n);
+    } else {
+        return array[0];
+    }
+}
+
 function myLast(array, n) {
     if (n) {
         return array.slice(-n);
     } else {
         return array[array.length - 1];
     }
+}
+
+function myKeys(object) {
+    return Object.keys(object);
+}
+
+function myValues(object) {
+    return Object.values(object);
 }

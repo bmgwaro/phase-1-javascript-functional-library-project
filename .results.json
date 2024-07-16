@@ -2,25 +2,25 @@
   "stats": {
     "suites": 11,
     "tests": 27,
-    "passes": 22,
+    "passes": 26,
     "pending": 0,
-    "failures": 5,
-    "start": "2024-07-16T08:19:15.197Z",
-    "end": "2024-07-16T08:19:15.656Z",
-    "duration": 459
+    "failures": 1,
+    "start": "2024-07-16T08:29:29.520Z",
+    "end": "2024-07-16T08:29:30.012Z",
+    "duration": 492
   },
   "tests": [
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -83,14 +83,14 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "message": "expected NaN to equal 28",
+        "message": "expected 31 to equal 28",
         "showDiff": true,
-        "actual": "NaN",
+        "actual": "31",
         "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:86:28)\n    at process.processImmediate (node:internal/timers:478:21)"
+        "stack": "AssertionError: expected 31 to equal 28\n    at Context.<anonymous> (test/indexTest.js:86:28)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     },
     {
@@ -103,14 +103,14 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -124,7 +124,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -152,27 +152,21 @@
     {
       "title": "returns the first element of the collection",
       "fullTitle": "index.js myFirst returns the first element of the collection",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:161:7)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myFirst is not defined"
-      }
+      "err": {}
     },
     {
       "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
       "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:165:14)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myFirst is not defined"
-      }
+      "err": {}
     },
     {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js myLast returns the last element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -186,12 +180,9 @@
     {
       "title": "retrieves all the names of the object's own enumerable properties",
       "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myKeys is not defined\n    at Context.<anonymous> (test/indexTest.js:241:14)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myKeys is not defined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -205,10 +196,7 @@
       "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myValues is not defined\n    at Context.<anonymous> (test/indexTest.js:254:14)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myValues is not defined"
-      }
+      "err": {}
     },
     {
       "title": "does not modify the original object",
@@ -223,54 +211,14 @@
     {
       "title": "returns the correct reduced value from object values",
       "fullTitle": "index.js myReduce returns the correct reduced value from object values",
-      "duration": 2,
-      "currentRetry": 0,
-      "err": {
-        "message": "expected NaN to equal 28",
-        "showDiff": true,
-        "actual": "NaN",
-        "expected": "28",
-        "stack": "AssertionError: expected NaN to equal 28\n    at Context.<anonymous> (test/indexTest.js:86:28)\n    at process.processImmediate (node:internal/timers:478:21)"
-      }
-    },
-    {
-      "title": "returns the first element of the collection",
-      "fullTitle": "index.js myFirst returns the first element of the collection",
       "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:161:7)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myFirst is not defined"
-      }
-    },
-    {
-      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
-      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myFirst is not defined\n    at Context.<anonymous> (test/indexTest.js:165:14)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myFirst is not defined"
-      }
-    },
-    {
-      "title": "retrieves all the names of the object's own enumerable properties",
-      "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myKeys is not defined\n    at Context.<anonymous> (test/indexTest.js:241:14)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myKeys is not defined"
-      }
-    },
-    {
-      "title": "retrieves all the values of the object's own properties",
-      "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "ReferenceError: myValues is not defined\n    at Context.<anonymous> (test/indexTest.js:254:14)\n    at process.processImmediate (node:internal/timers:478:21)",
-        "message": "myValues is not defined"
+        "message": "expected 31 to equal 28",
+        "showDiff": true,
+        "actual": "31",
+        "expected": "28",
+        "stack": "AssertionError: expected 31 to equal 28\n    at Context.<anonymous> (test/indexTest.js:86:28)\n    at process.processImmediate (node:internal/timers:478:21)"
       }
     }
   ],
@@ -278,14 +226,14 @@
     {
       "title": "calls alert with each element passed",
       "fullTitle": "index.js myEach calls alert with each element passed",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "calls alert properly on object values",
       "fullTitle": "index.js myEach calls alert properly on object values",
-      "duration": 2,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -355,14 +303,14 @@
     {
       "title": "returns the value if found",
       "fullTitle": "index.js myFind returns the value if found",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "does not traverse the whole array if the value is found early",
       "fullTitle": "index.js myFind does not traverse the whole array if the value is found early",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
       "err": {}
     },
@@ -376,7 +324,7 @@
     {
       "title": "correctly filters for values that the callback evaluates as true",
       "fullTitle": "index.js myFilter correctly filters for values that the callback evaluates as true",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -402,9 +350,23 @@
       "err": {}
     },
     {
+      "title": "returns the first element of the collection",
+      "fullTitle": "index.js myFirst returns the first element of the collection",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "returns the first n elements of the collection when the second optional argument (n) is provided",
+      "fullTitle": "index.js myFirst returns the first n elements of the collection when the second optional argument (n) is provided",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "returns the last element of the collection",
       "fullTitle": "index.js myLast returns the last element of the collection",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -416,8 +378,22 @@
       "err": {}
     },
     {
+      "title": "retrieves all the names of the object's own enumerable properties",
+      "fullTitle": "index.js myKeys retrieves all the names of the object's own enumerable properties",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "does not modify the original object",
       "fullTitle": "index.js myKeys does not modify the original object",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "retrieves all the values of the object's own properties",
+      "fullTitle": "index.js myValues retrieves all the values of the object's own properties",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
